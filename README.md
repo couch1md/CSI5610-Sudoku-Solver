@@ -36,7 +36,7 @@ Simulated Annealing is a form of Stochastic Search Algorithms that is inspired b
 
 Example: 
 ```bash
-  python3 ./SudokuSolver.py 
+  $ python3 ./SudokuSolver.py 
   Enter the algorithm to use: (1) Backtracking, (2) Bitmasked Backtracking, (3) Stochastic Search (Simulated Annealing): 1
   Enter the size of the Sudoku board (e.g. 4 for 4x4, 9 for 9x9, 16 for 16x16): 9
   Do you want to (1) Generate a board or (2) Provide a borad? 1
