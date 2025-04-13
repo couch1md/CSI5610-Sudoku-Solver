@@ -33,6 +33,8 @@ Simulated Annealing is a form of Stochastic Search Algorithms that is inspired b
                 (e.g: Row 1: 0 0 0 0 0 0 0 0 0)
 5. Enter to repeat, or type "exit" to quit application
 
+
+Example: 
 ```bash
   python3 ./SudokuSolver.py 
   Enter the algorithm to use: (1) Backtracking, (2) Bitmasked Backtracking, (3) Stochastic Search (Simulated Annealing): 1
