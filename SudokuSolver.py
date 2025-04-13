@@ -109,7 +109,7 @@ def determineDifficulty(size):
 
     # Ask user for difficulty level
     while True:
-        difficulty = input("Enter difficulty (Easy, Medium, Hard, Extreme): ").strip().lower()
+        difficulty = input("\nEnter difficulty (Easy, Medium, Hard, Extreme): ").strip().lower()
         if difficulty in difficulties:
             return difficulties[difficulty]
         print("Invalid difficulty... Please enter Easy, Medium, Hard, or Extreme.")
@@ -127,13 +127,13 @@ def sudoku():
 
     # Ask user for the size of the board and difficulty level
     while True:
-        size = int(input("Enter the size of the Sudoku board (e.g. 4 for 4x4, 9 for 9x9, 16 for 16x16): "))
+        size = int(input("\nEnter the size of the Sudoku board (e.g. 4 for 4x4, 9 for 9x9, 16 for 16x16): "))
         if math.sqrt(size) == int(size**0.5):
             break
         print("Invalid size. Please enter a perfect square (e.g. 4, 9, 16, etc.).")
     
     # Ask if the user wants to provide a board or generate one
-    generate = input("Do you want to (1) Generate a board or (2) Provide a borad? ")
+    generate = input("\nDo you want to (1) Generate a board or (2) Provide a borad? ")
     
     # If user wants to generate a board, ask for difficulty level
     if generate == "1":
@@ -191,7 +191,7 @@ def sudoku():
             board = SudokuSolver_StochasticSearch(size, matrix=board)
 
     # Print the initial board with 0s as empty locations
-    print("Initial Board: ")
+    print("\nInitial Board: ")
     printSodokuBoard(board.board, board.unsolved, board.smallGridDimension)
 
     # Solve the Sodoku board using the selected algorithm
@@ -209,4 +209,5 @@ if __name__ == "__main__":
         sudoku()
         user_input = input("Press Enter to generate a new board or 'exit' to quit: ")
         if user_input.lower() == 'exit':
+            print("Thanks for playing!")
             break
