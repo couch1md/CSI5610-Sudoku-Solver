@@ -38,38 +38,88 @@ Example:
 ```bash
   $ python3 ./SudokuSolver.py 
   Enter the algorithm to use: (1) Backtracking, (2) Bitmasked Backtracking, (3) Stochastic Search (Simulated Annealing): 1
+
   Enter the size of the Sudoku board (e.g. 4 for 4x4, 9 for 9x9, 16 for 16x16): 9
+
   Do you want to (1) Generate a board or (2) Provide a borad? 1
+
   Enter difficulty (Easy, Medium, Hard, Extreme): hard
-  Initial Board: 
+
+  Initial Board:
    -----------------------
-  | 3 0 0 | 4 0 0 | 0 7 9 |
-  | 0 0 1 | 6 9 7 | 0 8 0 |
-  | 0 9 0 | 2 0 0 | 0 0 5 |
+  | 0 7 9 | 3 0 5 | 0 6 0 |
+  | 6 2 8 | 0 4 0 | 3 0 5 |
+  | 4 3 5 | 0 8 0 | 0 7 0 |
    -----------------------
-  | 1 0 0 | 5 8 0 | 0 0 7 |
-  | 8 0 0 | 9 2 4 | 5 6 1 |
-  | 0 4 0 | 1 7 6 | 0 0 0 |
+  | 0 0 0 | 0 0 0 | 9 0 3 |
+  | 2 1 0 | 5 0 0 | 7 0 6 |
+  | 0 0 0 | 7 3 4 | 0 1 2 |
    -----------------------
-  | 2 0 0 | 0 5 0 | 0 0 6 |
-  | 0 1 3 | 7 0 2 | 8 5 0 |
-  | 0 8 5 | 0 4 1 | 0 9 0 |
+  | 7 8 0 | 0 1 0 | 6 5 4 |
+  | 0 6 4 | 0 0 2 | 1 0 0 |
+  | 0 0 0 | 0 7 6 | 0 2 0 |
    -----------------------
   Solving Sodoku using Backtracking...
    -----------------------
-  | 3 2 8 | 4 1 5 | 6 7 9 |
-  | 4 5 1 | 6 9 7 | 2 8 3 |
-  | 7 9 6 | 2 3 8 | 1 4 5 |
+  | 1 7 9 | 3 2 5 | 4 6 8 |
+  | 6 2 8 | 1 4 7 | 3 9 5 |
+  | 4 3 5 | 6 8 9 | 2 7 1 |
    -----------------------
-  | 1 6 9 | 5 8 3 | 4 2 7 |
-  | 8 3 7 | 9 2 4 | 5 6 1 |
-  | 5 4 2 | 1 7 6 | 9 3 8 |
+  | 5 4 7 | 2 6 1 | 9 8 3 |
+  | 2 1 3 | 5 9 8 | 7 4 6 |
+  | 8 9 6 | 7 3 4 | 5 1 2 |
    -----------------------
-  | 2 7 4 | 8 5 9 | 3 1 6 |
-  | 9 1 3 | 7 6 2 | 8 5 4 |
-  | 6 8 5 | 3 4 1 | 7 9 2 |
+  | 7 8 2 | 9 1 3 | 6 5 4 |
+  | 9 6 4 | 8 5 2 | 1 3 7 |
+  | 3 5 1 | 4 7 6 | 8 2 9 |
    -----------------------
   Press Enter to generate a new board or 'exit' to quit:
+  Enter the algorithm to use: (1) Backtracking, (2) Bitmasked Backtracking, (3) Stochastic Search (Simulated Annealing): 1
+
+  Enter the size of the Sudoku board (e.g. 4 for 4x4, 9 for 9x9, 16 for 16x16): 9
+
+  Do you want to (1) Generate a board or (2) Provide a borad? 2
+  Please enter 9 numbers between 0 and 9 separated by spaces (use 0 for empty cells):
+  Row 1: 3 0 6 5 0 8 4 0 0
+  Row 2: 5 2 0 0 0 0 0 0 0
+  Row 3: 0 8 7 0 0 0 0 3 1
+  Row 4: 0 0 3 0 1 0 0 8 0
+  Row 5: 9 0 0 8 6 3 0 0 5
+  Row 6: 0 5 0 0 9 0 6 0 0
+  Row 7: 1 3 0 0 0 0 2 5 0
+  Row 8: 0 0 0 0 0 0 0 7 4
+  Row 9: 0 0 5 2 0 6 3 0 0
+
+  Initial Board:
+   -----------------------
+  | 3 0 6 | 5 0 8 | 4 0 0 |
+  | 5 2 0 | 0 0 0 | 0 0 0 |
+  | 0 8 7 | 0 0 0 | 0 3 1 |
+   -----------------------
+  | 0 0 3 | 0 1 0 | 0 8 0 |
+  | 9 0 0 | 8 6 3 | 0 0 5 |
+  | 0 5 0 | 0 9 0 | 6 0 0 |
+   -----------------------
+  | 1 3 0 | 0 0 0 | 2 5 0 |
+  | 0 0 0 | 0 0 0 | 0 7 4 |
+  | 0 0 5 | 2 0 6 | 3 0 0 |
+   -----------------------
+  Solving Sodoku using Backtracking...
+   -----------------------
+  | 3 1 6 | 5 7 8 | 4 9 2 |
+  | 5 2 9 | 1 3 4 | 7 6 8 |
+  | 4 8 7 | 6 2 9 | 5 3 1 |
+   -----------------------
+  | 2 6 3 | 4 1 5 | 9 8 7 |
+  | 9 7 4 | 8 6 3 | 1 2 5 |
+  | 8 5 1 | 7 9 2 | 6 4 3 |
+   -----------------------
+  | 1 3 8 | 9 4 7 | 2 5 6 |
+  | 6 9 2 | 3 5 1 | 8 7 4 |
+  | 7 4 5 | 2 8 6 | 3 1 9 |
+   -----------------------
+  Press Enter to generate a new board or 'exit' to quit: exit
+  Thanks for playing!
 ```
 
 
