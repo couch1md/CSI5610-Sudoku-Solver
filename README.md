@@ -25,12 +25,14 @@ Simulated Annealing is a form of Stochastic Search Algorithms that is inspired b
 2. Enter the algorithm you want to use: (1) Backtracking, (2) Bitmasked Backtracking, (3) Stochastic Search (Simulated Annealing)
 3. Enter the size of the Sudoku Board you want to use (e.g. 4 for 4x4, 9 for 9x9, 16 for 16x16)
 4. Enter if you want to (1) Generate a board or (2) Provide a board
+
    If (1) Generate a board
       1. Enter difficulty (Easy, Medium, Hard, Extreme)
+   
    If (2) Provide a board
       1. Provide each row individually with each number separated by spaces and holes represented by 0's
          (e.g: Row 1: 0 0 0 0 0 0 0 0 0)
-5. Enter to repeat, or type "exit" to quit application
+6. Enter to repeat, or type "exit" to quit application
 
 
 Example: 
