@@ -10,11 +10,11 @@ Below is a short explanation of each of the three algorithms used: Backtracking,
 
 ### Backtracking
 
-Backtracking is a naive approach to solving the Sudoku problem. It attempts to fill each unassigned cell with a valid number, then checks the cells row, column, and small grid for the number it just assigned. If it is already present, it will backtrack to find a number that works. This is a brute force way of solving the Sudoku algorithm. It can be done in O(n * 9^(n * n)) time complexity, were n = dimension (e.g. 9 for 9x9 boards) and O(1) space complexity. 
+Backtracking is a naive approach to solving the Sudoku problem. It attempts to fill each unassigned cell with a valid number, then checks the cells row, column, and small grid for the number it just assigned. If it is already present, it will backtrack to find a number that works. This is a brute force way of solving the Sudoku algorithm. It can be done in O(n ^(n * n)) time complexity, were n = dimension (e.g. 9 for 9x9 boards) and O(1) space complexity. 
 
 ### Bitmasked Backtracking
 
-Bitmasked Backtracking is similar to Backtracking, except slightly optimized using bit masking. To incorporate this idea, extra arrays are created for rows, columns, and small grids of size n. These are used to denote the used values within each respective group. Setting the bit in these arrays means that the value is used, and unsetting the bit means it is not used. This speeds up the time complexity of the algorithm to be O(9^(n * n)) and keeps the O(1) space complexity. 
+Bitmasked Backtracking is similar to Backtracking, except slightly optimized using bit masking. To incorporate this idea, extra arrays are created for rows, columns, and small grids of size n. These are used to denote the used values within each respective group. Setting the bit in these arrays means that the value is used, and unsetting the bit means it is not used. This speeds up the time complexity of the algorithm to be O(n^(n * n)) and keeps the O(1) space complexity. 
 
 ### Simulated Annealing
 
